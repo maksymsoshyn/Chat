@@ -165,7 +165,7 @@ public class Server {
 
     public static void main(String[] args) {
         try {
-            new Server(8080);
+            new Server(Integer.parseInt(args[0]));
         } catch (IOException e) {
             e.printStackTrace();
         }
